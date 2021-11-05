@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>  
+    <title>Reto 3 </title>
+</head>
+
+<body>
+    <h1 align="center"> ¡TIENDA DE MÁQUINAS Y REPUESTOS LA POPULAR!</h1>
+    <h2> Categoría </h2>
+    <div id="resultado1"></div>
+    <script type="text/javascript"> 
+    window.onload = autoInicioCategoria();
+    </script>
+    <div>
+        <input type="text" id="Cname" placeholder="Nombre">
+        <input type="text" id="Cdescription" placeholder="Descripcion">
+  
+    </div>
+    <button onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+   
+    <!--Tabla Machine-->
+
+    <h2> Área de Maquinaria </h2>
+    <div id="resultado2"></div>
+    <script type="text/javascript"> 
+    window.onload = autoInicioMachine();
+    </script>
+    <div>
+        <input type="text" id="Oname" placeholder="Nombre">
+        <input type="text" id="Obrand" placeholder="Marca">
+        <input type="number" id="Oyear" placeholder="Año">
+        <input type="text" id="Odescription" placeholder="Descripcion">
+        <select id="select-category"></select>
+    </div>
+    <button onclick="guardarInformacionMachine()">Guardar Máquina</button>
+
+
+    <!--Tabla Cliente-->
+    <h2> Área de Clientes </h2>
+    <div id="resultado3"></div>
+    <script type="text/javascript"> 
+    window.onload = autoInicioCliente();
+    </script>
+    <div>
+        <input type="text" id="Clemail" placeholder="Email">
+        <input type="text" id="Clpassword" placeholder="Contraseña">
+        <input type="text" id="Clname" placeholder="Nombre">
+        <input type="number" id="Clage" placeholder="Edad">
+        
+    </div>
+    <button onclick="guardarInformacionCliente()">Guardar Cliente</button>
+</body>
+
+
+</html>
